@@ -11,7 +11,17 @@ export default function App() {
     <View style={styles.container}>
 
       <Text>Enter name: </Text>
-      <TextInput style={styles.input} />
+      <TextInput 
+      style={styles.input}
+      placeholder = 'e.g. Jhon Doe'
+      onChangeText={(val) => setName(val)} />
+
+      <Text>Enter age: </Text>
+      <TextInput 
+      style={styles.input}
+      placeholder = 'e.g. 30'
+      onChangeText={(val) => setAge(val)} />
+
       <Text>name: {name}, age: {age}</Text>
 
     </View>
