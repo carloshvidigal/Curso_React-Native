@@ -45,7 +45,10 @@ const styles = StyleSheet.create({
     marginTop: 24,
     padding: 30,
     backgroundColor: 'pink',
-    fontSize: 24
+    fontSize: 24,
+    marginHorizontal: 10,
+    marginTop: 24,
+    
   }
 
 });
