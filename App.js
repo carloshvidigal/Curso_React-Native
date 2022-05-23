@@ -17,7 +17,7 @@ export default function App() {
     <View style={styles.container}>
 
       <FlatList
-          numColumns={}                             // divides the data into columns
+          numColumns={0}                             // divides the data into columns
           keyExtractor={(item) => item.id}          //property on the item that is gonna be used as the key
           data={people}
           renderItem={( {item}) =>  (
