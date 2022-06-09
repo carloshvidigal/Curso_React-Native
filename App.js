@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, FlatList, Alert, TouchableWithoutFeedback, Keyb
 import Header from './components/header';
 import TodoItem from './components/todoItem';
 import AddTodo from './components/addTodo';
+import Sandbox from './components/sandbox';
+import reactDom from 'react-dom';
 
 
 export default function App() {
@@ -38,10 +40,11 @@ export default function App() {
 
 
   return (
+   //  <Sandbox />
     <TouchableWithoutFeedback onPress={() => {
       Keyboard.dismiss();
       console.log('dismissed keyboard')
-    }}>
+    }}>                                                   
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
@@ -57,6 +60,7 @@ export default function App() {
       </View>
     </View>
     </TouchableWithoutFeedback>
+
   );
 }
 
@@ -68,10 +72,12 @@ const styles = StyleSheet.create({
   
   content: {
     padding: 40,
+    flex: 1,
   },
 
   list: {
     marginTop: 20,
+    flex: 1,
   }
 
 
